@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MediaIntuit Digital creates promotional videos, websites, branding and digital content for modern businesses.">
+  <title>MediaIntuit Digital | Creative Media & Digital Marketing</title>
+  <style>
+    :root {
+      --navy: #061f30;
+      --teal: #1599a5;
+      --ivory: #f6f3ed;
+      --gold: #c4a77d;
+      --ink: #172b38;
+      --muted: #60717a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--ivory);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 90%); margin: auto; }
+    .topbar {
+      background: var(--navy);
+      color: white;
+      padding: 18px 0;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #092b49, var(--teal));
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      font-weight: 900;
+      color: white;
+    }
+    .brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      line-height: 1.1;
+    }
+    .brand-name span { color: #38c6cc; }
+    .brand-small {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: #59d8dc; }
+    .hero {
+      color: white;
+      background:
+        radial-gradient(circle at 85% 25%, rgba(21,153,165,.28), transparent 35%),
+        linear-gradient(125deg, #061f30, #103f50);
+      padding: 105px 0;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 50px;
+    }
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    h1, h2, h3 { line-height: 1.2; }
+    h1 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(46px, 6vw, 78px);
+      margin: 20px 0;
+    }
+    h1 em { color: #66d5d4; font-style: normal; }
+    .hero p {
+      max-width: 540px;
+      color: #d4e5e8;
+      font-size: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      background: var(--gold);
+      color: #092337;
+      border-radius: 5px;
+      font-weight: 800;
+      margin-top: 22px;
+    }
+    .btn:hover { background: #e0c69f; }
+    .hero-art {
+      min-height: 360px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 18px;
+      background:
+        linear-gradient(145deg, rgba(21,153,165,.26), rgba(0,0,0,.18)),
+        #092e41;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-art::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 50%;
+    }
+    .hero-art strong {
+      font-size: clamp(140px, 18vw, 240px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -20px;
+      background: linear-gradient(145deg, #fff, #29d1cf, #075a80);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      z-index: 1;
+    }
+    section { padding: 85px 0; }
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 38px;
+    }
+    .section-head h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 400;
+      margin: 12px 0;
+    }
+    .section-head p { color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border: 1px solid #e8e7e2;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.035);
+    }
+    .card-icon {
+      color: var(--teal);
+      font-size: 30px;
+    }
+    .card h3 { font-size: 20px; margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: 15px; }
+    .portfolio { background: #eaeff0; }
+    .project {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .project-image {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 30px;
+    }
+    .salon { background: linear-gradient(130deg,#84666d,#c9a5a4); }
+    .wellness { background: linear-gradient(130deg,#426c66,#94b3a0); }
+    .mexico { background: linear-gradient(130deg,#b96335,#e9b34e); }
+    .project-body { padding: 23px; }
+    .project-body p { color: var(--muted); font-size: 14px; }
+    .about {
+      background: white;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .about-panel {
+      background: var(--navy);
+      color: white;
+      border-radius: 14px;
+      padding: 45px;
+    }
+    .about-panel h3 { color: #63d6d4; font-size: 26px; }
+    .about-panel p { color: #d4e5e8; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .step-number {
+      color: var(--teal);
+      font-size: 36px;
+      font-family: Georgia, serif;
+    }
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+    .contact h2 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(34px, 5vw, 54px);
+    }
+    .contact p { color: #d4e5e8; }
+    footer {
+      background: #031521;
+      color: #c9d7dc;
+      text-align: center;
+      padding: 26px 15px;
+      font-size: 13px;
+    }
+    @media(max-width: 800px) {
+      .hero-inner, .about-grid { grid-template-columns: 1fr; }
+      .grid, .steps { grid-template-columns: 1fr; }
+      .hero { padding: 65px 0; }
+      .hero-art { min-height: 240px; }
+      section { padding: 60px 0; }
+      .nav-links { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="MediaIntuit Digital home">
+        <div class="brand-icon">M</div>
+        <div>
+          <div class="brand-name">Media<span>Intuit</span></div>
+          <div class="brand-small">Digital</div>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="container hero-inner">
+        <div>
+          <div class="eyebrow">Creative Media & Digital Marketing</div>
+          <h1>Elevate Your <em>Brand.</em></h1>
+          <p>Beautifully crafted videos, websites, and digital experiences that help your business make a lasting impression.</p>
+          <a class="btn" href="#contact">Let's Create Something</a>
+        </div>
+        <div class="hero-art" aria-label="MediaIntuit Digital brand graphic">
+          <strong>M</strong>
+        </div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What We Do</div>
+          <h2>Creative solutions for modern businesses.</h2>
+          <p>From your first promotional video to a complete digital presence, we bring your ideas to life.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="card-icon">▶</div>
+            <h3>Promotional Videos</h3>
+            <p>Engaging video content for salons, boutiques, service businesses, and growing brands.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">◇</div>
+            <h3>Website Design</h3>
+            <p>Modern, responsive websites designed to showcase your business beautifully.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">✦</div>
+            <h3>Branding & Graphics</h3>
+            <p>Distinctive visual identities, promotional graphics, and cohesive brand materials.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">▣</div>
+            <h3>Social Media Content</h3>
+            <p>Creative content designed for today's social platforms and audiences.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">◎</div>
+            <h3>Content Strategy</h3>
+            <p>Thoughtful messaging and content planning to communicate your brand's story.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">✧</div>
+            <h3>Digital Creative Services</h3>
+            <p>Flexible creative support for campaigns, launches, and special projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Featured Work</div>
+          <h2>Ideas brought to life.</h2>
+          <p>A selection of creative concepts and portfolio projects.</p>
+        </div>
+        <div class="grid">
+          <article class="project">
+            <div class="project-image salon">Velvet & Bloom</div>
+            <div class="project-body">
+              <h3>Luxury Salon Promo</h3>
+              <p>Promotional video concept showcasing elegant beauty branding.</p>
+              <small>Portfolio concept</small>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-image wellness">HolisticVox</div>
+            <div class="project-body">
+              <h3>Wellness Digital Platform</h3>
+              <p>A wellness-focused digital publishing and content project.</p>
+              <small>In-house project</small>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-image mexico">Por Amor a México</div>
+            <div class="project-body">
+              <h3>Animated Creative Content</h3>
+              <p>A colorful bilingual animation and cultural storytelling concept.</p>
+              <small>Creative concept</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow">About MediaIntuit Digital</div>
+          <h2>Creative thinking. Digital possibilities.</h2>
+          <p>MediaIntuit Digital brings together visual storytelling, creative media, and digital marketing to help businesses present themselves with confidence.</p>
+          <p>We believe great creative work begins with listening, understanding your vision, and transforming ideas into memorable experiences.</p>
+        </div>
+        <div class="about-panel">
+          <h3>Your vision, thoughtfully created.</h3>
+          <p>Whether you need a promotional video, a refreshed brand presence, or engaging digital content, we're here to help turn your next idea into something meaningful.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Our Approach</div>
+          <h2>Simple, collaborative, creative.</h2>
+        </div>
+        <div class="steps">
+          <div>
+            <div class="step-number">01</div>
+            <h3>Discover</h3>
+            <p>We learn about your business, goals, and creative vision.</p>
+          </div>
+          <div>
+            <div class="step-number">02</div>
+            <h3>Create</h3>
+            <p>We develop a visual concept and bring your project to life.</p>
+          </div>
+          <div>
+            <div class="step-number">03</div>
+            <h3>Deliver</h3>
+            <p>We refine the details and prepare your finished creative assets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="eyebrow">Let's Work Together</div>
+        <h2>Ready to elevate your brand?</h2>
+        <p>Tell us about your business and what you'd love to create.</p>
+        <a class="btn" href="mailto:mediaintuitdigital@gmail.com?subject=MediaIntuit%20Digital%20Project%20Inquiry">Start Your Project</a>
+        <p>mediaintuitdigital@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> MediaIntuit Digital.
+    Creative Media & Digital Marketing.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
