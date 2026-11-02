@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore MediaIntuit Digital's creative services, live projects and selected ventures in development: wellness, media, education, culture, travel and publishing.">
+  <title>Our Ventures | MediaIntuit Digital</title>
+  <style>
+    :root{--navy:#061f30;--teal:#1599a5;--ivory:#f6f3ed;--gold:#c4a77d;--ink:#172b38;--muted:#60717a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,90%);margin:auto}
+    .topbar{background:var(--navy);color:#fff;padding:18px 0}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand-icon{width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#092b49,var(--teal));display:grid;place-items:center;font-size:32px;font-weight:900}
+    .brand-name{font-size:22px;font-weight:800;letter-spacing:-.6px;line-height:1.1}
+    .brand-name span{color:#38c6cc}
+    .brand-small{font-size:10px;letter-spacing:2.5px;text-transform:uppercase}
+    .nav-links{display:flex;flex-wrap:wrap;gap:21px;font-size:14px}
+    .nav-links a:hover,.nav-links a[aria-current="page"]{color:#65d5d6}
+    .hero{background:linear-gradient(120deg,var(--navy),#164b55);padding:85px 0 75px;color:white}
+    .eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:800;text-transform:uppercase}
+    h1,h2,h3{line-height:1.18}
+    h1,h2{font-family:Georgia,serif;font-weight:400}
+    h1{font-size:clamp(43px,6vw,72px);margin:14px 0 20px}
+    .hero p{max-width:750px;color:#d4e5e8;font-size:18px;margin-bottom:20px}
+    .cta{display:inline-block;background:var(--gold);color:#092337;border-radius:5px;font-weight:800;padding:13px 20px;margin-top:12px}
+    main{padding:68px 0 86px}
+    h2{font-size:clamp(30px,4vw,46px);margin:8px 0 12px}
+    .intro{max-width:850px;color:var(--muted)}
+    .filters{display:flex;gap:10px;flex-wrap:wrap;margin:35px 0 30px}
+    .filter{font:inherit;background:white;border:1px solid #cfdddf;color:var(--navy);border-radius:28px;padding:9px 15px;cursor:pointer}
+    .filter.active,.filter:hover{background:var(--navy);color:white;border-color:var(--navy)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+    .venture{background:white;border-radius:12px;border:1px solid #e0e6e4;padding:25px;box-shadow:0 9px 20px rgba(0,0,0,.035);display:flex;flex-direction:column}
+    .venture[hidden]{display:none}
+    .meta{display:flex;gap:8px;justify-content:space-between;align-items:flex-start;color:var(--muted);font-size:11px;letter-spacing:.3px;min-height:24px}
+    .status{border:1px solid #d6e4e3;border-radius:50px;padding:2px 8px;white-space:nowrap;color:#30666c}
+    .venture h3{font-family:Georgia,serif;font-size:24px;font-weight:400;margin:16px 0 8px}
+    .venture p{font-size:14px;color:#4b5d65;margin:6px 0}
+    .venture p.next{border-top:1px solid #eef0ed;padding-top:14px;margin-top:auto;font-size:13px}
+    .visit{color:#0b737d;font-size:14px;font-weight:800;text-decoration:underline;text-underline-offset:4px;margin-top:17px}
+    .transparency{background:#edf1ef;border-left:3px solid var(--teal);padding:16px 20px;margin-top:35px;font-size:14px;color:#34505b;border-radius:3px}
+    .bottom{margin-top:50px;background:var(--navy);color:#fff;border-radius:14px;padding:37px}
+    .bottom h2{font-size:34px}
+    .bottom p{color:#d4e5e8}
+    footer{background:#031521;color:#c9d7dc;text-align:center;padding:25px 15px;font-size:13px}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:630px){.grid{grid-template-columns:1fr}.hero{padding:55px 0}.venture{padding:23px}.nav-links{gap:13px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html#home" aria-label="MediaIntuit Digital home">
+      <span class="brand-icon" aria-hidden="true">M</span><span><span class="brand-name">Media<span>Intuit</span></span><span class="brand-small" style="display:block">Digital</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html#home">Home</a><a href="index.html#services">Services</a><a href="index.html#portfolio">Portfolio</a><a href="ventures.html" aria-current="page">Ventures</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<div class="hero"><div class="container">
+  <div class="eyebrow">MediaIntuit Venture Studio</div>
+  <h1>Ideas in motion.<br>Projects in progress.</h1>
+  <p>We develop and explore creative services, bilingual media, wellness education, culture, publishing, and technology. Some projects are live; others are being researched, produced, or tested.</p>
+  <a class="cta" href="index.html#contact">Discuss a creative project</a>
+</div></div>
+<main><div class="container">
+  <div class="eyebrow">Selected Brands &amp; Initiatives</div><h2>Explore the venture portfolio.</h2>
+  <p class="intro">This directory shows selected public-facing initiatives and their current working stage. A concept listing does not mean a product is launched, a separate company exists, or a paid service is available.</p>
+  <div class="filters" role="group" aria-label="Filter ventures"><button class="filter active" type="button" data-filter="All projects" aria-pressed="true">All projects</button>
+<button class="filter" type="button" data-filter="Creative services" aria-pressed="false">Creative services</button>
+<button class="filter" type="button" data-filter="Wellness &amp; media" aria-pressed="false">Wellness &amp; media</button>
+<button class="filter" type="button" data-filter="Education &amp; civic" aria-pressed="false">Education &amp; civic</button>
+<button class="filter" type="button" data-filter="Commerce &amp; travel" aria-pressed="false">Commerce &amp; travel</button>
+<button class="filter" type="button" data-filter="Books &amp; publishing" aria-pressed="false">Books &amp; publishing</button></div>
+  <div class="grid" id="ventures"><article class="venture" data-category="Creative services">
+  <div class="meta"><span>Creative services</span><span class="status">Live</span></div>
+  <h3>MediaIntuit Digital</h3>
+  <p>Promotional videos, web design, and digital content for businesses.</p>
+  <p class="next">Next: polished video examples, clear pricing, and a consistent lead pipeline.</p>
+  <a class="visit" href="index.html" >Visit project <span aria-hidden="true">↗</span></a>
+</article>
+<article class="venture" data-category="Wellness &amp; media">
+  <div class="meta"><span>Wellness &amp; media</span><span class="status">Live</span></div>
+  <h3>HolisticVox</h3>
+  <p>Bilingual wellness publishing, nutrition articles, recipes, and educational resources.</p>
+  <p class="next">Next: complete editorial review, affiliate disclosures, and newsletter conversion.</p>
+  <a class="visit" href="https://holisticvox.com/" target="_blank" rel="noopener noreferrer">Visit project <span aria-hidden="true">↗</span></a>
+</article>
+<article class="venture" data-category="Creative services">
+  <div class="meta"><span>Creative services</span><span class="status">Sample in progress</span></div>
+  <h3>Velvet &amp; Bloom</h3>
+  <p>Luxury salon promotional-video portfolio concept.</p>
+  <p class="next">Next: publish the finished video preview with permission to use all assets.</p>
+  
+</article>
+<article class="venture" data-category="Wellness &amp; media">
+  <div class="meta"><span>Wellness &amp; media</span><span class="status">In development</span></div>
+  <h3>Aletheia Media</h3>
+  <p>Research-led books and films on consciousness and reported near-death experiences.</p>
+  <p class="next">Next: an evidence log and a thoroughly sourced pilot episode.</p>
+  
+</article>
+<article class="venture" data-category="Wellness &amp; media">
+  <div class="meta"><span>Wellness &amp; media</span><span class="status">Series concept</span></div>
+  <h3>Aletheia TV</h3>
+  <p>Proposed video series within Aletheia Media.</p>
+  <p class="next">Next: define episode format and create a first researched video.</p>
+  
+</article>
+<article class="venture" data-category="Wellness &amp; media">
+  <div class="meta"><span>Wellness &amp; media</span><span class="status">In production</span></div>
+  <h3>Aetheria Sanctuary</h3>
+  <p>Original meditation soundscapes and visual experiences.</p>
+  <p class="next">Next: publish a rights-cleared long-form video using existing music.</p>
+  
+</article>
+<article class="venture" data-category="Wellness &amp; media">
+  <div class="meta"><span>Wellness &amp; media</span><span class="status">In production</span></div>
+  <h3>Nina, Por Amor a México</h3>
+  <p>Faceless bilingual content exploring Mexican culture, traditions, travel, and language.</p>
+  <p class="next">Next: a consistent series of short published videos.</p>
+  
+</article>
+<article class="venture" data-category="Wellness &amp; media">
+  <div class="meta"><span>Wellness &amp; media</span><span class="status">Pilot stage</span></div>
+  <h3>Living Earth Network</h3>
+  <p>Nature-focused resources and a proposed directory connecting audiences with relevant organizations.</p>
+  <p class="next">Next: verify the public directory, listing workflow, and first participants.</p>
+  
+</article>
+<article class="venture" data-category="Wellness &amp; media">
+  <div class="meta"><span>Wellness &amp; media</span><span class="status">Concept</span></div>
+  <h3>LongevityVox</h3>
+  <p>Healthy aging and longevity media concept.</p>
+  <p class="next">Next: define its unique role alongside HolisticVox.</p>
+  
+</article>
+<article class="venture" data-category="Education &amp; civic">
+  <div class="meta"><span>Education &amp; civic</span><span class="status">In development</span></div>
+  <h3>All AI University</h3>
+  <p>Beginner-friendly AI lessons and practical learning resources.</p>
+  <p class="next">Next: publish the first three lessons and a course roadmap.</p>
+  
+</article>
+<article class="venture" data-category="Education &amp; civic">
+  <div class="meta"><span>Education &amp; civic</span><span class="status">In development</span></div>
+  <h3>SEED Critical Thinking</h3>
+  <p>Critical-thinking and reasoning education resources.</p>
+  <p class="next">Next: create a tested introductory lesson and teacher-facing materials.</p>
+  
+</article>
+<article class="venture" data-category="Education &amp; civic">
+  <div class="meta"><span>Education &amp; civic</span><span class="status">In development</span></div>
+  <h3>RiseRight</h3>
+  <p>Civic ideas, research, and a book project on institutional improvements.</p>
+  <p class="next">Next: review the existing draft chapters and publish source-backed materials.</p>
+  
+</article>
+<article class="venture" data-category="Education &amp; civic">
+  <div class="meta"><span>Education &amp; civic</span><span class="status">Pilot concept</span></div>
+  <h3>What If?</h3>
+  <p>Community idea collection and thoughtful problem solving.</p>
+  <p class="next">Next: create a simple volunteer-led pilot with clear consent.</p>
+  
+</article>
+<article class="venture" data-category="Commerce &amp; travel">
+  <div class="meta"><span>Commerce &amp; travel</span><span class="status">Paused / planning</span></div>
+  <h3>VenturaTerra Travel</h3>
+  <p>Destination information and travel-guide concept.</p>
+  <p class="next">Next: verify the site, destination content, and potential partner links.</p>
+  
+</article>
+<article class="venture" data-category="Commerce &amp; travel">
+  <div class="meta"><span>Commerce &amp; travel</span><span class="status">Planning</span></div>
+  <h3>ThanaKov</h3>
+  <p>Curated e-commerce concept focused on a defined product niche.</p>
+  <p class="next">Next: select initial products, verify storefront and delivery policies.</p>
+  
+</article>
+<article class="venture" data-category="Books &amp; publishing">
+  <div class="meta"><span>Books &amp; publishing</span><span class="status">In development</span></div>
+  <h3>MediaIntuit Publishers</h3>
+  <p>Proposed publishing imprint for nonfiction, educational and creative work.</p>
+  <p class="next">Next: define editorial workflow and launch the first completed title.</p>
+  
+</article>
+<article class="venture" data-category="Books &amp; publishing">
+  <div class="meta"><span>Books &amp; publishing</span><span class="status">Research stage</span></div>
+  <h3>Cancer Uncovered</h3>
+  <p>Book project exploring cancer biology, prevention, nutrition and the interpretation of health claims.</p>
+  <p class="next">Next: medically review claims and complete a sourced manuscript.</p>
+  
+</article>
+<article class="venture" data-category="Books &amp; publishing">
+  <div class="meta"><span>Books &amp; publishing</span><span class="status">In development</span></div>
+  <h3>HolisticVox Recipe Collection</h3>
+  <p>Companion recipe and nutrition resource.</p>
+  <p class="next">Next: test and photograph the first ten recipes.</p>
+  
+</article>
+<article class="venture" data-category="Education &amp; civic">
+  <div class="meta"><span>Education &amp; civic</span><span class="status">Concept</span></div>
+  <h3>Branch &amp; Bloom Foundation</h3>
+  <p>Proposed charitable education initiative.</p>
+  <p class="next">Next: confirm mission and legal structure before soliciting donations.</p>
+  
+</article>
+<article class="venture" data-category="Creative services">
+  <div class="meta"><span>Creative services</span><span class="status">Service concept</span></div>
+  <h3>AI Website Building</h3>
+  <p>Potential fixed-scope AI-assisted website creation offer.</p>
+  <p class="next">Next: build a demonstrable client-ready sample and test delivery costs.</p>
+  
+</article></div>
+  <p class="transparency">MediaIntuit also maintains a broader internal inventory covering earlier names, shared capabilities, books, client opportunities, and private projects. Those are not all independent operating businesses, so they are not presented as such here.</p>
+  <div class="bottom"><div class="eyebrow">Let's Work Together</div><h2>Have a project in mind?</h2><p>MediaIntuit Digital can help with promotional video concepts, website projects, branding and creative content.</p><a class="cta" href="index.html#contact">Start Your Project</a></div>
+</div></main>
+<footer>© <span id="year"></span> MediaIntuit Digital. Creative Media &amp; Digital Marketing.</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const filters=document.querySelectorAll('.filter');
+const cards=document.querySelectorAll('.venture');
+filters.forEach(button=>button.addEventListener('click',()=>{
+  filters.forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});
+  button.classList.add('active');button.setAttribute('aria-pressed','true');
+  const selection=button.dataset.filter;
+  cards.forEach(card=>card.hidden=selection!=='All projects'&&card.dataset.category!==selection);
+}));
+</script>
+</body></html>
