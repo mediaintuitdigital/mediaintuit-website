@@ -162,6 +162,7 @@
     .card h3 { font-size: 20px; margin-bottom: 10px; }
     .card p { color: var(--muted); font-size: 15px; }
     .portfolio { background: #eaeff0; }
+    .portfolio .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .project {
       background: white;
       border-radius: 10px;
@@ -181,6 +182,7 @@
     .salon { background: linear-gradient(130deg,#84666d,#c9a5a4); }
     .wellness { background: linear-gradient(130deg,#426c66,#94b3a0); }
     .mexico { background: linear-gradient(130deg,#b96335,#e9b34e); }
+    .seed { background: linear-gradient(135deg,#e1f3da 0%,#a4dbd9 53%,#fbd46b 100%); color: #123e41; font-family: Arial, Helvetica, sans-serif; font-size: clamp(24px, 3vw, 34px); font-weight: 800; letter-spacing: -1px; }
     .project-body { padding: 23px; }
     .project-body small { display: block; margin-top: 12px; color: var(--muted); }
     .project-link { display: inline-block; margin-top: 10px; color: #087984; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
@@ -235,7 +237,7 @@
     }
     @media(max-width: 800px) {
       .hero-inner, .about-grid { grid-template-columns: 1fr; }
-      .grid, .steps { grid-template-columns: 1fr; }
+      .grid, .steps, .portfolio .grid { grid-template-columns: 1fr; }
       .hero { padding: 65px 0; }
       .hero-art { min-height: 240px; }
       .hero-art img { height: 240px; }
@@ -353,6 +355,15 @@
               <h3>Animated Creative Content</h3>
               <p>A colorful bilingual animation and cultural storytelling concept.</p>
               <small>Creative concept</small>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-image seed">Think It Through</div>
+            <div class="project-body">
+              <h3>SEED Critical Thinking — Educational Workbooks</h3>
+              <p>A learning initiative that helps children develop curiosity, independent reasoning, and evidence-based thinking. The <em>Think It Through: Facts, Clues &amp; Smart Questions</em> workbook for Grades 3–5 is currently in production.</p>
+              <a class="project-link" href="https://seedcriticalthinking.com/" target="_blank" rel="noopener noreferrer">Explore SEED Critical Thinking ↗</a>
+              <small>Educational platform published · Workbook in development</small>
             </div>
           </article>
         </div>
